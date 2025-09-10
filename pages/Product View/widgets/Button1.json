@@ -31,7 +31,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 46,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('Log Reactive Call', {\n  \"scanned_product_name\": Get_Individual_Product.data[0].name\n}, 'SAME_WINDOW').then(() => {\n  navigateTo('Log Reactive Call', {\n    \"key\": \"value\"\n  }, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{navigateTo('Log Reactive Call', {}, 'SAME_WINDOW').then(() => {\n  navigateTo('Log Reactive Call', {\n    \"scanned_product_name\": Get_Individual_Product.data[0].name\n  }, 'SAME_WINDOW');\n});}}",
   "originalBottomRow": 62,
   "originalTopRow": 58,
   "parentColumnSpace": 6.84375,
