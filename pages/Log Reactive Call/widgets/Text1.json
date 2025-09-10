@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 39,
   "shouldTruncate": false,
-  "text": "Log a Reactive Call for {{appsmith.store.name}}",
+  "text": "Log a Reactive Call for {{appsmith.store.scanned_product_name}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 5,
