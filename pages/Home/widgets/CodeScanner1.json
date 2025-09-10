@@ -31,7 +31,7 @@
   "mobileRightColumn": 45,
   "mobileTopRow": 30,
   "needsErrorInfo": false,
-  "onCodeDetected": "{{navigateTo('WrARJWM7_actionscheduler_actions', {\n  \"scanned_sku\": CodeScanner1.value\n}, 'SAME_WINDOW').then(() => {\n  storeValue('scanned_sku', CodeScanner1.value);\n});}}",
+  "onCodeDetected": "{{navigateTo('Product View', {\n  \"scanned_sku\": CodeScanner1.value\n}, 'SAME_WINDOW').then(() => {\n  storeValue('scanned_sku', CodeScanner1.value);\n});}}",
   "parentColumnSpace": 6.84375,
   "parentId": "0",
   "parentRowSpace": 10,
