@@ -21,11 +21,11 @@
   "icon": "lotus",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Home",
       "isDefault": true
     },
     {
-      "id": "WrARJWM7_actionscheduler_actions",
+      "id": "Product View",
       "isDefault": false
     },
     {
