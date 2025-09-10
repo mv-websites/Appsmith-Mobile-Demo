@@ -1,0 +1,13 @@
+UPDATE WrARJWM7_actionscheduler_actions SET
+		hook = '{{update_form.fieldState.hook.isVisible ? update_form.formData.hook : update_form.sourceData.hook}}',
+		status = '{{update_form.fieldState.status.isVisible ? update_form.formData.status : update_form.sourceData.status}}',
+    scheduled_date_gmt = '{{update_form.fieldState.scheduled_date_gmt.isVisible ? update_form.formData.scheduled_date_gmt : update_form.sourceData.scheduled_date_gmt}}',
+		scheduled_date_local = '{{update_form.fieldState.scheduled_date_local.isVisible ? update_form.formData.scheduled_date_local : update_form.sourceData.scheduled_date_local}}',
+		priority = '{{update_form.fieldState.priority.isVisible ? update_form.formData.priority : update_form.sourceData.priority}}',
+		args = '{{update_form.fieldState.args.isVisible ? update_form.formData.args : update_form.sourceData.args}}',
+		schedule = '{{update_form.fieldState.schedule.isVisible ? update_form.formData.schedule : update_form.sourceData.schedule}}',
+		group_id = '{{update_form.fieldState.group_id.isVisible ? update_form.formData.group_id : update_form.sourceData.group_id}}',
+		attempts = '{{update_form.fieldState.attempts.isVisible ? update_form.formData.attempts : update_form.sourceData.attempts}}',
+		last_attempt_gmt = '{{update_form.fieldState.last_attempt_gmt.isVisible ? update_form.formData.last_attempt_gmt : update_form.sourceData.last_attempt_gmt}}',
+		last_attempt_local = '{{update_form.fieldState.last_attempt_local.isVisible ? update_form.formData.last_attempt_local : update_form.sourceData.last_attempt_local}}'
+  WHERE action_id = {{data_table.selectedRow.action_id}};

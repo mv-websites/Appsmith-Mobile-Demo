@@ -1,0 +1,26 @@
+INSERT INTO WrARJWM7_actionscheduler_actions (
+	hook,
+	status,
+	scheduled_date_gmt,
+	scheduled_date_local,
+	priority,
+	args,
+	schedule,
+	group_id,
+	attempts,
+	last_attempt_gmt,
+	last_attempt_local
+)
+VALUES (
+	'{{insert_form.formData.hook}}',
+	'{{insert_form.formData.status}}',
+	'{{insert_form.formData.scheduled_date_gmt}}',
+	'{{insert_form.formData.scheduled_date_local}}',
+	'{{insert_form.formData.priority}}',
+	'{{insert_form.formData.args}}',
+	'{{insert_form.formData.schedule}}',
+	'{{insert_form.formData.group_id}}',
+	'{{insert_form.formData.attempts}}',
+	'{{insert_form.formData.last_attempt_gmt}}',
+	'{{insert_form.formData.last_attempt_local}}'
+);

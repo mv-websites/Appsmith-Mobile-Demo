@@ -1,0 +1,2 @@
+DELETE FROM WrARJWM7_actionscheduler_actions
+  WHERE action_id = {{data_table.triggeredRow.action_id}};

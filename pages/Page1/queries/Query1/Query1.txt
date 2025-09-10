@@ -1,0 +1,1 @@
+SELECT * FROM WrARJWM7_actionscheduler_actions LIMIT 10;
