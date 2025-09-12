@@ -4,6 +4,8 @@
   "bottomRow": 10,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -14,35 +16,35 @@
   ],
   "dynamicTriggerPathList": [
     {
-      "key": "onCodeDetected"
+      "key": "onClick"
     }
   ],
-  "flexVerticalAlignment": "start",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
   "isVisible": true,
-  "key": "leap2ja0y9",
-  "label": " Scan Again",
-  "leftColumn": 41,
-  "mobileBottomRow": 63,
-  "mobileLeftColumn": 20,
-  "mobileRightColumn": 45,
-  "mobileTopRow": 30,
+  "key": "usxxeq4laf",
+  "leftColumn": 46,
+  "minWidth": 120,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onCodeDetected": "{{navigateTo('Product View', {\n  \"scanned_sku\": CodeScanner1.value\n}, 'SAME_WINDOW').then(() => {\n  storeValue('scanned_sku', CodeScanner1.value);\n  clearStore();\n});}}",
+  "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 6.84375,
   "parentId": "0",
   "parentRowSpace": 10,
   "placement": "CENTER",
+  "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "responsiveBehavior": "fill",
-  "rightColumn": 61,
-  "scannerLayout": "CLICK_TO_SCAN",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "text": "Scan Again",
   "topRow": 6,
-  "type": "CODE_SCANNER_WIDGET",
+  "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "5c0eutttqk",
-  "widgetName": "CodeScanner1"
+  "widgetId": "exk1r5tiaq",
+  "widgetName": "Button2"
 }
