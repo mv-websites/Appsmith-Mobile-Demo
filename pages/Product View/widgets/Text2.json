@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -40,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 51,
   "shouldTruncate": false,
-  "text": "Your Scanned Product",
+  "text": "{{Get_Individual_Product.data[0].name}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,
