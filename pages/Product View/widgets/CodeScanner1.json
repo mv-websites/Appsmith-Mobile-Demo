@@ -1,0 +1,48 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onCodeDetected"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "leap2ja0y9",
+  "label": " Scan Again",
+  "leftColumn": 41,
+  "mobileBottomRow": 63,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 30,
+  "needsErrorInfo": false,
+  "onCodeDetected": "{{navigateTo('Product View', {\n  \"scanned_sku\": CodeScanner1.value\n}, 'SAME_WINDOW').then(() => {\n  storeValue('scanned_sku', CodeScanner1.value);\n});}}",
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 61,
+  "scannerLayout": "CLICK_TO_SCAN",
+  "topRow": 6,
+  "type": "CODE_SCANNER_WIDGET",
+  "version": 1,
+  "widgetId": "5c0eutttqk",
+  "widgetName": "CodeScanner1"
+}
