@@ -4,7 +4,7 @@ SELECT
     sku.meta_value AS sku,
     p.post_title AS name,
     price_table.min_price AS price,
-    img.guid AS main_image_url
+		replace(img.guid, 'https://dev.service-line.co.uk/', 'https://www.service-line.co.uk/') AS main_image_url
 FROM WrARJWM7_posts p
 LEFT JOIN WrARJWM7_wc_product_meta_lookup price_table 
     ON p.ID = price_table.product_id
